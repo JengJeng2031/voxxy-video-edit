@@ -34,15 +34,13 @@ const Import: React.FC = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>
-      <div className="scrollable-area">
-        <div className="image-grid">
-          {filteredImages.map((image) => (
-            <div key={image.id} className="image-item">
-              <img src={image.src} alt={image.name} />
-              <p>{image.name}</p>
-            </div>
-          ))}
-        </div>
+      <div className="image-grid">
+        {filteredImages.map((image) => (
+          <div key={image.id} className="image-item">
+            <img src={image.src} alt={image.name} />
+            <p>{image.name}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

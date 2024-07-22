@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IconSearch } from '@tabler/icons-react';
+import { IconSearch, IconPlus } from '@tabler/icons-react';
 import '../css/import.css';
 
 const Import: React.FC = () => {
@@ -12,6 +12,23 @@ const Import: React.FC = () => {
   const filteredImages = images.filter((image) =>
     image.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  const handleAddFile = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (file) {
+      const newImage = {
+        id: images.length + 1,
+        name: file.name,
+        src: URL.createObjectURL(file),
+      };
+      setImages((prevImages) => [...prevImages, newImage]);
+      console.log('File added:', file.name);
+    }
+  };
+
+  const handleClick = () => {
+    document.getElementById('file-input')?.click();
+  };
 
   return (
     <div className="import-container">
@@ -32,6 +49,16 @@ const Import: React.FC = () => {
           </div>
         ))}
       </div>
+      <input
+        type="file"
+        id="file-input"
+        style={{ display: 'none' }}
+        onChange={handleAddFile}
+        accept="image/*"
+      />
+      <button className="add-file-button" onClick={handleClick}>
+        <IconPlus size={30} />
+      </button>
     </div>
   );
 };

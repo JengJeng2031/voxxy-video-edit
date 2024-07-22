@@ -7,16 +7,11 @@ const Import: React.FC = () => {
   const [images, setImages] = useState([
     { id: 1, name: 'Bubble Gum.mp4', src: 'bubble_gum.jpg' },
     { id: 2, name: 'OMG.mp4', src: 'OMG.jpg' },
-    { id: 3, name: 'Bubble Gum.mp4', src: 'bubble_gum.jpg' },
-    { id: 4, name: 'OMG.mp4', src: 'OMG.jpg' },
-    { id: 5, name: 'Bubble Gum.mp4', src: 'bubble_gum.jpg' },
+    { id: 3, name: 'Fancy.mp4', src: 'fancy.jpg' },
+    { id: 4, name: 'Talk That Talk.mp4', src: 'talk_that_talk.jpg' },
+    { id: 5, name: 'The Feel.mp4', src: 'the_feel.jpg' },
     { id: 6, name: 'OMG.mp4', src: 'OMG.jpg' },
-    { id: 7, name: 'Bubble Gum.mp4', src: 'bubble_gum.jpg' },
-    { id: 8, name: 'OMG.mp4', src: 'OMG.jpg' },
-    { id: 9, name: 'Bubble Gum.mp4', src: 'bubble_gum.jpg' },
-    { id: 10, name: 'OMG.mp4', src: 'OMG.jpg' },
-    { id: 11, name: 'Bubble Gum.mp4', src: 'bubble_gum.jpg' },
-    { id: 12, name: 'OMG.mp4', src: 'OMG.jpg' },
+ 
   ]);
 
   const filteredImages = images.filter((image) =>

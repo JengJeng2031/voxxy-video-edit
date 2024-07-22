@@ -1,9 +1,8 @@
-
 .sidebar {
   position: absolute;
   width: 98px; 
   height: 100%;
-  left: 0px;
+  left: 0;
   top: 65px;
   background-color: #6771EA;
   color: #FFFFFF;
@@ -25,13 +24,15 @@
   cursor: pointer;
   padding: 10px 0;
   transition: background-color 0.3s, color 0.3s;
-  width: 50%;
+  width: 100%; 
   color: inherit;
 }
 
 .menu-item.active {
   background-color: #FFFFFF;
   color: #000000;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .menu-item .icon {
@@ -50,13 +51,14 @@
   position: absolute;
   width: 380px;
   height: 600px;
-  left: 95px;
+  left: 98px; 
   top: 65px;
   background: #FFFFFF;
-  border-radius: 0px;
+  border-radius: 0; 
   box-shadow: 15px 15px 40px -20px rgba(0,0,0,0.25);
 }
-span{
+
+span {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;

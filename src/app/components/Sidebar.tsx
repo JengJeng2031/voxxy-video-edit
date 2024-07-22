@@ -18,7 +18,7 @@ const Sidebar: React.FC<{ onSelect?: (component: string | null) => void }> = ({ 
     const newActiveIcon = activeIcon === iconName ? null : iconName;
     setActiveIcon(newActiveIcon);
     if (onSelect) {
-      onSelect(newActiveIcon);  // ตรวจสอบก่อนเรียกฟังก์ชัน onSelect
+      onSelect(newActiveIcon);  
     }
   };
 

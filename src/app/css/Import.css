@@ -26,6 +26,14 @@
   border-radius: 5px;
 }
 
+.image-grid-wrapper {
+  position: relative; /* ให้ image-grid-wrapper เป็น relative เพื่อให้ปุ่มจัดตำแหน่งตาม */
+  max-height: 430px; /* ความสูงที่คุณต้องการให้แสดงผลใน scroll area */
+  overflow-y: auto; /* เพิ่ม scroll bar ในแนวตั้ง */
+  overflow-x: hidden; /* ซ่อน scroll bar ในแนวนอน */
+  margin-bottom: 50px; /* ให้พื้นที่กับปุ่มด้านล่าง */
+}
+
 .image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -46,3 +54,28 @@
   margin-top: 5px;
   font-size: 14px;
 }
+.button-div {
+  position: relative;
+}
+
+.add-file-button {
+  position: absolute;
+  bottom: -10px; /* ปรับตำแหน่งตามต้องการ */
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 40%;
+  color: white;
+  background-color: #6771EA;
+  border: none;
+}
+
+.add-file-button:hover {
+  background-color: #0056b3;
+}
+
+.add-file-button:focus {
+  outline: none;
+}
+
+

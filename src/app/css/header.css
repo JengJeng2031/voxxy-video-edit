@@ -1,18 +1,19 @@
-/* header.css */
 .header {
-    position:absolute;
-    width: 1920px;
-    height: 65px;
-    left: 0px;
-    top: 0px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 15px 40px -27px rgba(0,0,0,0.45);
-  }
+  position: absolute;
+  width: 1920px;
+  height: 65px;
+  left: 0px;
+  top: 0px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 15px 40px -27px rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
 
-  .Export_btn{
-    position: absolute;
-    top: 8px;
-    right: 16px;
-    font-size: 18px;
-  }
+.Export_btn {
+  font-size: 30px;
+  margin-right: 50px;
+}
 

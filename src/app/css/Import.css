@@ -1,0 +1,23 @@
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  border: 1px solid #A5A3AE;
+  border-radius: 6px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.search {
+  width: 80%;
+  height: 30px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding-left: 8px;
+}

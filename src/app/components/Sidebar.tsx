@@ -11,13 +11,15 @@ import Text from '../components/Text';
 import Audio from '../components/Audio';
 import Transition from '../components/Transition';
 
-
-
-const Sidebar: React.FC<{ onSelect: (component: string) => void }> = ({ onSelect }) => {
+const Sidebar: React.FC<{ onSelect?: (component: string | null) => void }> = ({ onSelect }) => {
   const [activeIcon, setActiveIcon] = useState<string | null>(null);
 
   const handleIconClick = (iconName: string) => {
-    setActiveIcon(iconName);
+    const newActiveIcon = activeIcon === iconName ? null : iconName;
+    setActiveIcon(newActiveIcon);
+    if (onSelect) {
+      onSelect(newActiveIcon);  // ตรวจสอบก่อนเรียกฟังก์ชัน onSelect
+    }
   };
 
   return (

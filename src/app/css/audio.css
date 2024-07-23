@@ -1,0 +1,87 @@
+.templateTool {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+
+  .searchContainer {
+    margin-bottom: 20px;
+  }
+
+  .searchInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+
+  .audioList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .audioItem {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .playButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 15%;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 18px;
+    color: #555;
+  }
+
+  .audioInfo {
+    flex: 1;
+  }
+
+  .audioTitle {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .audioDuration {
+    font-size: 14px;
+    color: #777;
+  }
+
+  .addButton {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+  }
+
+
+  .addAudio {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #6366f1; /* สีม่วงอ่อนตามภาพ */
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

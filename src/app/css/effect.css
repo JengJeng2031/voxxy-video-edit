@@ -1,127 +1,148 @@
 .effect-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    position: relative;
-  }
-  
-  .search-bar {
-    margin-bottom: 20px;
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-icon {
-    position: absolute;
-    left: 10px;
-    color: #666;
-  }
-  
-  .search-bar input {
-    width: 100%;
-    padding: 10px 10px 10px 40px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .effect-grid-wrapper {
-    position: relative;
-  }
-  
-  .category-section {
-    margin-bottom: 20px;
-  }
-  
-  .category-section h3 {
-    margin-bottom: 10px;
-  }
-  
-  .scroll-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  
-  .effect-grid {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
-  }
-  
-  .effect-grid::-webkit-scrollbar {
-    display: none; /* WebKit */
-  }
-  
-  .effect-item {
-    flex: 0 0 auto;
-    width: 120px;
-    margin-right: 15px;
-    text-align: center;
-  }
-  
-  .effect-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  
-  .effect-item p {
-    margin-top: 5px;
-    font-size: 12px;
-  }
-  
-  .scroll-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.7);
-    border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 1;
-  }
-  
-  .scroll-button.left {
-    left: 0;
-  }
-  
-  .scroll-button.right {
-    right: 0;
-  }
-  
-  .button-div {
-    position: relative;
-  }
-  
-  .add-effect-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    color: white;
-    background-color: #6771EA;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-  
-  .add-effect-button:hover {
-    background-color: #0056b3;
-  }
-  
-  .add-effect-button:focus {
-    outline: none;
-  }
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  color: #666;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.effect-grid-wrapper {
+  height: 400px; /* ปรับความสูงตามต้องการ */
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.category-section {
+  margin-bottom: 20px;
+}
+
+.category-section h3 {
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 2;
+  padding: 5px 0;
+}
+
+.scroll-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.effect-grid {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 10px 0;
+}
+
+.effect-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.effect-item {
+  flex: 0 0 auto;
+  width: 120px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.effect-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.effect-item p {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.scroll-button.left {
+  left: 0;
+}
+
+.scroll-button.right {
+  right: 0;
+}
+
+.button-div {
+  position: relative;
+}
+
+.add-effect-button {
+  position: absolute;
+  bottom: -100px; /* ปรับตำแหน่งตามต้องการ */
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 40%;
+  color: white;
+  background-color: #6771EA;
+  border: none;
+}
+
+.add-effect-button:hover {
+  background-color: #0056b3;
+}
+
+.add-effect-button:focus {
+  outline: none;
+}
+
+/* Customize scrollbar for vertical scrolling */
+.effect-grid-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.effect-grid-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.effect-grid-wrapper::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.effect-grid-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

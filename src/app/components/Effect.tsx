@@ -12,7 +12,7 @@ interface Effect {
 const Effect: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [effects, setEffects] = useState<Effect[]>([
-    { id: 1, name: 'effect_1', src: 'fancy.jpg', category: 'เลนส์' },
+    { id: 1, name: 'supanovaaa', src: 'fancy.jpg', category: 'เลนส์' },
     { id: 2, name: 'effect_2', src: 'fancy.jpg', category: 'เลนส์' },
     { id: 3, name: 'effect_3', src: 'fancy.jpg', category: 'เลนส์' },
     { id: 4, name: 'effect_4', src: 'effect_4.jpg', category: 'เลนส์' },
@@ -24,6 +24,10 @@ const Effect: React.FC = () => {
     { id: 10, name: 'effect_2', src: 'effect_2.jpg', category: 'ประกายไฟ' },
     { id: 11, name: 'effect_3', src: 'effect_3.jpg', category: 'ประกายไฟ' },
     { id: 12, name: 'effect_4', src: 'effect_4.jpg', category: 'ประกายไฟ' },
+    { id: 13, name: 'effect_1', src: 'effect_1.jpg', category: 'ระเบิด' },
+    { id: 14, name: 'effect_2', src: 'effect_2.jpg', category: 'ระเบิด' },
+    { id: 15, name: 'effect_3', src: 'effect_3.jpg', category: 'ระเบิด' },
+    { id: 16, name: 'effect_4', src: 'effect_4.jpg', category: 'ระเบิด' },
   ]);
 
   const filteredEffects = effects.filter((effect) =>
@@ -43,7 +47,7 @@ const Effect: React.FC = () => {
         id: effects.length + index + 1,
         name: file.name,
         src: URL.createObjectURL(file),
-        category: 'New Effects', // You may want to prompt the user for a category
+        category: 'New Effects', 
       }));
       setEffects([...effects, ...newEffects]);
     }

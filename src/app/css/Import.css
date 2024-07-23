@@ -60,7 +60,7 @@
 
 .add-file-button {
   position: absolute;
-  bottom: -10px; /* ปรับตำแหน่งตามต้องการ */
+  bottom: -20px; /* ปรับตำแหน่งตามต้องการ */
   right: 10px;
   width: 40px;
   height: 40px;

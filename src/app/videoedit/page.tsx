@@ -5,7 +5,7 @@ import Header from '../components/Header';
 
 const Homepage: React.FC = () => {
   return (
-    <div className="home">
+    <div>
       <Header />
       <Sidebar />
     </div>

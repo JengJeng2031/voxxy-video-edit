@@ -31,8 +31,8 @@
 .menu-item.active {
   background-color: #FFFFFF;
   color: #000000;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+
+
 }
 
 .menu-item .icon {

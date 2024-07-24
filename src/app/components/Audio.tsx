@@ -1,5 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import '../css/audio.css';
+import {
+  IconSearch
+} from "@tabler/icons-react";
 
 interface AudioItem {
   title: string;
@@ -56,8 +59,9 @@ const Audio: React.FC = () => {
   return (
     <div ref={sidebarRef} className="import-tool" style={{ width }}>
       <div className="templateTool">
-        <div className="searchContainer">
-          <input type="text" placeholder="🔍 Search" className="searchInput" />
+        <div className="search-container">
+          <IconSearch className="icon" />
+          <input type="text" className="search" placeholder="Search" />
         </div>
         <div className="audioList">
           {audioItems.map((item, index) => (

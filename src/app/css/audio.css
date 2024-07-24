@@ -10,12 +10,18 @@
     margin-bottom: 20px;
 }
 
-.searchInput {
+.search {
     width: 93%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    height: 30px;
+    border: none;
+    outline: none;
     font-size: 16px;
+    padding-left: 8px;
+}
+
+.icon {
+    margin-right: 8px;
+    color: #D2D1D6;
 }
 
 .audioListContainer {

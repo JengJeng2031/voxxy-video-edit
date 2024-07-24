@@ -1,8 +1,5 @@
 .import-tool {
-  position: relative;
   background: #FFF;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  overflow: hidden;
   padding: 20px;
   max-width: 800px;
   min-width: 100px;
@@ -13,7 +10,8 @@
   right: 0;
   top: 0;
   bottom: 0;
-  width: 10px;
+  width: 1px;
+  height: 100%;
   cursor: ew-resize;
   background-color: #ccc;
 }

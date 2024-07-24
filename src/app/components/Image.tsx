@@ -4,23 +4,23 @@ import { IconPlus, IconSearch } from '@tabler/icons-react';
 
 const listImage: React.FC = () => {
   const [image, setImage] = useState<{ id: number; name: string; }[]>([
-    { id: 1, name: 'Image 1' },
-    { id: 2, name: 'Image 2' },
-    { id: 3, name: 'Image 3' },
-    { id: 4, name: 'Image 4' },
-    { id: 5, name: 'Image 5' },
-    { id: 6, name: 'Image 6' },
-    { id: 7, name: 'Image 7' },
-    { id: 8, name: 'Image 8' },
-    { id: 9, name: 'Image 9' },
-    { id: 10, name: 'Image 10' },
-    { id: 11, name: 'Image 11' },
-    { id: 12, name: 'Image 12' },
-    { id: 13, name: 'Image 13' },
+    { id: 1, name: './imageStore/Image 1.jpg' },
+    { id: 2, name: './imageStore/Image 2.jpg' },
+    { id: 3, name: './imageStore/Image 3.jpg' },
+    { id: 4, name: './imageStore/Image 4.jpg' },
+    // { id: 5, name: './imageStore/Image 5.jpg' },
+    // { id: 6, name: './imageStore/Image 6.jpg' },
+    // { id: 7, name: './imageStore/Image 7.jpg' },
+    // { id: 8, name: './imageStore/Image 8.jpg' },
+    // { id: 9, name: './imageStore/Image 9.jpg' },
+    // { id: 10, name: './imageStore/Image 10.jpg' },
+    // { id: 11, name: './imageStore/Image 11.jpg' },
+    // { id: 12, name: './imageStore/Image 12.jpg' },
+    // { id: 13, name: './imageStore/Image 13.jpg' },
   ]);
 
   const clickAddList = () => {
-    const newImage = { id: image.length + 1, name: `Image ${image.length + 1}` };
+    const newImage = { id: image.length + 1, name: `Image ${image.length + 1}.jpg` }; //'Image '+ (image.length + 1)
     setImage([...image, newImage]);
   }
 
@@ -34,7 +34,7 @@ const listImage: React.FC = () => {
         <div className="grid-container">
           {image.map(img => (
             <div key={img.id} className="grid-item">
-              {img.name}
+              <img className="imgStyle" src={img.name} alt={img.name}></img>
             </div>
           ))}
         </div>

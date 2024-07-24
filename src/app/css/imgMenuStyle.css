@@ -45,8 +45,8 @@
 
 .grid-item {
     background-color: #f0f0f0;
-    padding: 20px;
-    height: 50px;
+    /* padding: 20px; */
+    /* height: 50px; */
     text-align: center;
     vertical-align: middle;
     margin-right: 10px;
@@ -54,7 +54,8 @@
 }
 
 .bgMargin {
-    margin: 10px 0px 10px 20px; /* t r b l*/
+    margin: 10px 0px 10px 20px;
+    /* t r b l*/
 }
 
 .allImgArea {
@@ -76,4 +77,10 @@
 
 .search-button:hover {
     background-color: #0056b3;
+}
+
+.imgStyle {
+    width: 155px;
+    height: auto;
+    object-fit: cover;
 }
